@@ -10,6 +10,9 @@
 | 폴더 | 문서 | 내용 |
 |---|---|---|
 | `일일진행일지/` | `1일차.md`, `2일차.md` | 날짜별 진행 상황과 파트별 작업 |
+| `분석결과/파트3_여신업종분석/` | `README.md`, `01`~`06` | 파트 3 여신·업종 분석: 결과, 한계, 직면 문제, 데이터 명세, 쉬운 설명, 추가 분석 설계 |
+
+관련 저장소: 분석 코드 [Don-Ddok_Data](https://github.com/Don-Ddok/Don-Ddok_Data), 실무 활용 프로토타입 [Don-Ddok_Dashboard](https://github.com/Don-Ddok/Don-Ddok_Dashboard)(https://donddok.vercel.app)
 
 > 은행 제공 원본 데이터와 거기서 나온 회사 단위 값은 이 저장소에 올리지 않습니다. 문서에는 집계 결과만 적습니다.
 
