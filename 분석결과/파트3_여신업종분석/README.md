@@ -26,6 +26,6 @@
 ## 함께 보는 곳
 
 - 분석 코드: [Don-Ddok_Data `src/part3_loan_industry/`](https://github.com/Don-Ddok/Don-Ddok_Data)
-- 실무 활용 프로토타입(대시보드): https://donddok.vercel.app ([Don-Ddok_Dashboard](https://github.com/Don-Ddok/Don-Ddok_Dashboard))
+- 법인 고객 마케팅 월보(대시보드): https://donddok.vercel.app ([Don-Ddok_Dashboard](https://github.com/Don-Ddok/Don-Ddok_Dashboard)) — 근거와 한계 → 여신 분석 22장에 이 폴더의 그림이 그대로 들어 있습니다
 
 > 문서의 수치는 모두 집계 결과입니다. 은행 제공 원본 데이터와 법인 단위 값은 올리지 않습니다. 문서 안의 `단계별 분석/…` 경로는 분석자 로컬 폴더 기준이며, 같은 코드가 Data 저장소에 있습니다.
