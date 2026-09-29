@@ -16,7 +16,7 @@
 | `결과보고서/` | `iM뱅크_결과보고서_돈독_본문형.pdf` | iM뱅크 결과 보고서 중간본(9/28 기준). 최종 제출(10/6) 전 역할분담표 v2 기준으로 개정 예정 |
 | `역할분담/` | `역할분담표_v2.md`, `돈독_역할분담표.pdf` | 9/28 역할 분담표 v2: 결과물 마감(10/6)까지 역할별 할 일과 하지 않을 것 |
 
-관련 저장소: 분석 코드 [Don-Ddok_Data](https://github.com/Don-Ddok/Don-Ddok_Data), 실무 활용 프로토타입 [Don-Ddok_Dashboard](https://github.com/Don-Ddok/Don-Ddok_Dashboard)(https://donddok.vercel.app)
+관련 저장소: 분석 코드 [Don-Ddok_Data](https://github.com/Don-Ddok/Don-Ddok_Data), 법인 고객 마케팅 월보 프로토타입 [Don-Ddok_Dashboard](https://github.com/Don-Ddok/Don-Ddok_Dashboard)(https://donddok.vercel.app — 이번 달 추천, 팀 인사이트, 여신 분석 22장, 용어 사전)
 
 > 은행 제공 원본 데이터와 거기서 나온 회사 단위 값은 이 저장소에 올리지 않습니다. 문서에는 집계 결과만 적습니다.
 
