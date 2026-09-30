@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="ko"><head><meta charset="utf-8"><title>cover3 lime</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css">
+<style>
+  :root {
+    --bg: #F5FBEA; --bg2: #E3F5C4;
+    --lime: #9BD84E; --lime-deep: #4F9A1C; --lime-soft: #CFEFA3;
+    --orange: #F0875A; --ink: #16301A;
+    --line: rgba(60,110,25,.09); --muted: rgba(22,48,26,.62);
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { zoom: 2; }
+  body { width: 1920px; height: 1080px; overflow: hidden; font-family: Pretendard, 'Noto Sans KR', sans-serif; color: var(--ink); background: transparent; }
+  .slide { position: relative; width: 1920px; height: 1080px; background: radial-gradient(1200px 900px at 78% 35%, var(--bg2) 0%, var(--bg) 62%); overflow: hidden; }
+  .grid { position: absolute; inset: 0; background-image: linear-gradient(var(--line) 1px, transparent 1px), linear-gradient(90deg, var(--line) 1px, transparent 1px); background-size: 96px 96px; mask-image: linear-gradient(90deg, transparent 0%, rgba(0,0,0,.25) 35%, #000 70%); }
+  svg.art { position: absolute; right: 0; top: 0; width: 1920px; height: 1080px; }
+  .top { position: absolute; left: 120px; right: 120px; top: 84px; display: flex; justify-content: space-between; align-items: center; }
+  .brand { display: flex; align-items: center; gap: 16px; }
+  .brand .name { font-size: 30px; font-weight: 700; letter-spacing: -.5px; }
+  .brand .en { font-size: 18px; font-weight: 500; color: var(--muted); letter-spacing: 1px; margin-left: 4px; }
+  .org { font-size: 20px; font-weight: 500; color: var(--muted); letter-spacing: .2px; }
+  .main { position: absolute; left: 120px; top: 340px; width: 1000px; }
+  .eyebrow { display: flex; align-items: center; gap: 16px; font-size: 24px; font-weight: 600; color: var(--lime-deep); letter-spacing: .5px; }
+  .eyebrow::before { content: ''; width: 44px; height: 3px; background: var(--lime); }
+  h1 { margin-top: 30px; font-size: 92px; line-height: 1.12; font-weight: 800; letter-spacing: -3px; }
+  h1 em { font-style: normal; color: var(--lime-deep); }
+  .sub { margin-top: 30px; font-size: 34px; font-weight: 500; color: rgba(22,48,26,.88); letter-spacing: -.8px; }
+  .sub b { font-weight: 700; color: var(--ink); box-shadow: inset 0 -13px 0 rgba(155,216,78,.6); }
+  .foot { position: absolute; left: 120px; right: 120px; bottom: 84px; padding-top: 28px; border-top: 1px solid rgba(22,48,26,.16); display: flex; justify-content: space-between; font-size: 21px; color: var(--muted); }
+  .foot strong { color: var(--ink); font-weight: 600; margin-right: 18px; }
+  /* ?mode=bg 배경만 / ?mode=logo 로고만(밝은 배경용) / ?mode=logo,ondark 로고만(어두운 배경용) */
+  body.bg .top, body.bg .main, body.bg .foot { display: none; }
+  body.logo .slide { background: transparent; }
+  body.logo .grid, body.logo svg.art, body.logo .main, body.logo .foot, body.logo .org { display: none; }
+  body.logo .top { left: 24px; top: 24px; right: auto; }
+  .tile { fill: var(--ink); }
+  body.logo.ondark .tile { fill: #FFFFFF; }
+  body.logo.ondark .brand .name { color: #FFFFFF; }
+  body.logo.ondark .brand .en { color: rgba(255,255,255,.7); }
+</style></head>
+<body>
+<div class="slide">
+  <div class="grid"></div>
+  <svg class="art" viewBox="0 0 1920 1080" aria-hidden="true">
+    <defs>
+      <linearGradient id="area" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="#9BD84E" stop-opacity=".42"/><stop offset="1" stop-color="#9BD84E" stop-opacity="0"/>
+      </linearGradient>
+      <linearGradient id="fadeL" x1="0" y1="0" x2="1" y2="0">
+        <stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset=".25" stop-color="#fff" stop-opacity="1"/>
+      </linearGradient>
+      <mask id="m"><rect x="0" y="0" width="1920" height="1080" fill="url(#fadeL)"/></mask>
+    </defs>
+    <circle cx="1560" cy="430" r="330" fill="rgba(255,255,255,.35)" stroke="rgba(79,154,28,.14)" stroke-width="1.5"/>
+    <circle cx="1560" cy="430" r="470" fill="none" stroke="rgba(79,154,28,.09)" stroke-width="1.5"/>
+    <g mask="url(#m)">
+      <path d="M1010 760 C1120 700 1190 720 1280 640 S1430 560 1520 590 S1690 520 1800 470 L1920 440 L1920 1080 L1010 1080 Z" fill="url(#area)"/>
+      <path d="M1010 760 C1120 700 1190 720 1280 640 S1430 560 1520 590 S1690 520 1800 470 L1920 440" fill="none" stroke="#6FBF2A" stroke-width="3.5"/>
+      <path d="M1010 700 C1120 690 1200 660 1280 700 S1430 790 1520 810 S1690 860 1800 900 L1920 930" fill="none" stroke="#F0875A" stroke-width="2.5" stroke-dasharray="2 10" stroke-linecap="round"/>
+    </g>
+    <g fill="#F5FBEA" stroke="#6FBF2A" stroke-width="3">
+      <circle cx="1280" cy="640" r="7"/><circle cx="1520" cy="590" r="7"/><circle cx="1800" cy="470" r="9" fill="#6FBF2A"/>
+    </g>
+    <circle cx="1800" cy="470" r="22" fill="none" stroke="rgba(111,191,42,.5)" stroke-width="2"/>
+    <g stroke="rgba(22,48,26,.13)" stroke-width="1">
+      <line x1="1280" y1="660" x2="1280" y2="880"/><line x1="1520" y1="610" x2="1520" y2="880"/><line x1="1800" y1="495" x2="1800" y2="880"/>
+    </g>
+    <g fill="rgba(79,154,28,.13)">
+      <rect x="1240" y="790" width="80" height="90" rx="3"/><rect x="1480" y="750" width="80" height="130" rx="3"/><rect x="1760" y="700" width="80" height="180" rx="3"/>
+    </g>
+  </svg>
+
+  <div class="top">
+    <div class="brand">
+      <svg width="52" height="52" viewBox="0 0 52 52" aria-hidden="true">
+        <rect class="tile" width="52" height="52" rx="13"/>
+        <circle cx="21" cy="26" r="12" fill="#F0875A"/>
+        <circle cx="31" cy="26" r="12" fill="#9BD84E" fill-opacity=".9"/>
+      </svg>
+      <span class="name">돈독</span><span class="en">DON-DDOK</span>
+    </div>
+    <div class="org">iM DiGital Banker Academy 9기 · 통계 프로젝트</div>
+  </div>
+
+  <div class="main">
+    <div class="eyebrow">대구·경북 법인 36개월 은행 데이터 분석</div>
+    <h1>착시를 걷어낸<br><em>은행 장부</em></h1>
+    <div class="sub">수출이 기침하면 <b>먼저 우는 계좌</b></div>
+  </div>
+
+  <div class="foot">
+    <div><strong>팀 돈독</strong>신다혜 · 허민영 · 이성진 · 장재열 · 전유환</div>
+    <div>2026.09.21 – 2026.10.07</div>
+  </div>
+</div>
+<script>
+  const q = new URLSearchParams(location.search).get('mode') || '';
+  q.split(',').filter(Boolean).forEach(c => document.body.classList.add(c));
+</script>
+</body></html>
