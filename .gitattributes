@@ -1,0 +1,7 @@
+# 문서·이미지 파일은 줄바꿈 변환 없이 그대로 저장 (PDF가 텍스트로 오인돼 깨지는 것 방지)
+*.pdf binary
+*.docx binary
+*.pptx binary
+*.xlsx binary
+*.png binary
+*.jpg binary
