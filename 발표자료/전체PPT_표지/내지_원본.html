@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="ko"><head><meta charset="utf-8"><title>inner</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css">
+<style>
+  :root { --ink: #16211F; --muted: #6B7775; --mint: #2BC4AB; --mint-d: #0F7A6A; --mint-w: #E7F6F2; --orange: #F0875A; --rule: #DCE6E3; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { zoom: 2; }
+  body { width: 1920px; height: 1080px; overflow: hidden; font-family: Pretendard, 'Noto Sans KR', sans-serif; color: var(--ink); }
+  .page { position: relative; width: 1920px; height: 1080px; overflow: hidden;
+    background: radial-gradient(900px 620px at 100% 0%, #DDF3EE 0%, rgba(221,243,238,.55) 38%, rgba(255,255,255,0) 70%), #FFFFFF; }
+  .dots { position: absolute; right: 0; top: 0; width: 620px; height: 380px;
+    background-image: radial-gradient(rgba(15,122,106,.16) 1.6px, transparent 1.8px); background-size: 28px 28px;
+    mask-image: radial-gradient(520px 340px at 100% 0%, #000 0%, transparent 75%); }
+  svg.rings { position: absolute; right: -180px; top: -260px; width: 760px; height: 760px; }
+  .foot { position: absolute; left: 96px; right: 96px; bottom: 44px; height: 52px; border-top: 1.5px solid var(--rule);
+    display: flex; justify-content: space-between; align-items: flex-end; }
+  .brand { display: flex; align-items: center; gap: 10px; }
+  .brand .name { font-size: 20px; font-weight: 700; letter-spacing: -.3px; }
+  .brand .en { font-size: 13px; font-weight: 600; color: var(--muted); letter-spacing: 1.2px; margin-left: 2px; }
+  .proj { font-size: 16px; font-weight: 500; color: var(--muted); letter-spacing: -.2px; margin-right: 64px; }
+  /* 배치 예시 전용 */
+  .guide { display: none; }
+  body.show-guide .guide { display: block; }
+  .g-chip { position: absolute; left: 96px; top: 72px; font-size: 18px; font-weight: 700; color: var(--mint-d);
+    background: var(--mint-w); border-radius: 999px; padding: 7px 16px; }
+  .g-title { position: absolute; left: 96px; top: 118px; font-size: 48px; font-weight: 800; letter-spacing: -1.5px; }
+  .g-lead { position: absolute; left: 96px; top: 192px; font-size: 24px; font-weight: 500; color: var(--muted); }
+  .g-body { position: absolute; left: 96px; right: 96px; top: 262px; bottom: 132px; border: 2px dashed #BFD6D0; border-radius: 16px;
+    display: flex; align-items: center; justify-content: center; font-size: 26px; font-weight: 600; color: #8FA7A1; }
+  .g-num { position: absolute; right: 96px; bottom: 44px; font-size: 16px; line-height: 1.5; font-weight: 700; color: var(--mint-d); }
+  .g-note { position: absolute; font-size: 14px; font-weight: 600; color: var(--orange); }
+</style></head>
+<body>
+<div class="page">
+  <div class="dots"></div>
+  <svg class="rings" viewBox="0 0 760 760" aria-hidden="true">
+    <circle cx="380" cy="380" r="250" fill="none" stroke="rgba(43,196,171,.28)" stroke-width="1.5"/>
+    <circle cx="380" cy="380" r="330" fill="none" stroke="rgba(43,196,171,.18)" stroke-width="1.5"/>
+    <circle cx="380" cy="380" r="370" fill="none" stroke="rgba(240,135,90,.22)" stroke-width="1.2" stroke-dasharray="2 9" stroke-linecap="round"/>
+  </svg>
+
+  <div class="foot">
+    <div class="brand">
+      <svg width="30" height="30" viewBox="0 0 52 52" aria-hidden="true">
+        <rect width="52" height="52" rx="13" fill="#E3F4F0"/>
+        <circle cx="21" cy="26" r="12" fill="#F0875A"/>
+        <circle cx="31" cy="26" r="12" fill="#2BC4AB" fill-opacity=".85"/>
+      </svg>
+      <span class="name">돈독</span><span class="en">DON-DDOK</span>
+    </div>
+    <div class="proj">착시를 걷어낸 은행 장부 · 2026.09.21 – 2026.10.07</div>
+  </div>
+
+  <div class="guide">
+    <div class="g-chip">구역 이름 (예: 02 분석 결과)</div>
+    <div class="g-title">페이지 제목 자리</div>
+    <div class="g-lead">한 줄 요약 자리 — 이 페이지에서 말하고 싶은 결론</div>
+    <div class="g-body">본문 영역 (그래프 · 표 · 그림)</div>
+    <div class="g-num">12</div>
+  </div>
+</div>
+<script>
+  const q = new URLSearchParams(location.search).get('mode') || '';
+  q.split(',').filter(Boolean).forEach(c => document.body.classList.add(c));
+</script>
+</body></html>
